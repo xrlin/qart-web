@@ -4,7 +4,7 @@ This project is the web ui of [qart](https://github.com/qart)
 
 ## Online application
 
-[https://xrlin.githu.io/qart-web](https://xrlin.github.io/qart-web)
+[https://xrlin.github.io/qart-web](https://xrlin.github.io/qart-web)
 
 ## Build && Run
 
