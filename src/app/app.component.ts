@@ -4,6 +4,9 @@ import {QartForm, QartResponse} from './qart-form';
 import {DomSanitizer} from '@angular/platform-browser';
 import {QartService} from './qart.service';
 import {environment} from '../environments/environment';
+import {catchError} from 'rxjs/operators';
+import {HttpErrorResponse} from '@angular/common/http';
+import {throwError} from 'rxjs';
 
 declare var $: any;
 
@@ -34,7 +37,24 @@ export class AppComponent implements AfterViewInit, OnInit {
 
   submit() {
     this.loading = true;
-    this.qartService.buidQart(this.qartForm).subscribe((resp: QartResponse) => {
+    this.qartService.buidQart(this.qartForm).pipe(
+      catchError((error: HttpErrorResponse) => {
+        if (error.error instanceof ErrorEvent) {
+          // A client-side or network error occurred. Handle it accordingly.
+          console.error('An error occurred:', error.error.message);
+        } else {
+          // The backend returned an unsuccessful response code.
+          // The response body may contain clues as to what went wrong,
+          console.error(
+            `Backend returned code ${error.status}, ` +
+            `body was: ${error.error}`);
+        }
+        this.loading = false;
+        alert('Something bad happened; please try again later. Check your network and image size..');
+        // return an observable with a user-facing error message
+        return throwError(
+          'Something bad happened; please try again later.');
+      })).subscribe((resp: QartResponse) => {
       this.loading = false;
       if (resp.error) {
         alert(resp.error);
@@ -46,7 +66,8 @@ export class AppComponent implements AfterViewInit, OnInit {
         medium: imgURL,
         big: imgURL
       });
-    });
+    }
+    );
   }
 
   toggleEmbedMode() {

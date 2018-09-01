@@ -118,17 +118,17 @@ func startServer(addr string, serveFrontend bool, frontendAddr string) {
   http.Handle("/"+CachePath + "/", http.StripPrefix("/"+CachePath+"/", http.FileServer(http.Dir(CachePath))))
   if serveFrontend {
     go func() {
-      log.Fatal(http.ListenAndServe(frontendAddr, http.FileServer(http.Dir(FrontEndFolder))))
       log.Println("frontend server listening on 0.0.0.0:8081")
+      log.Fatal(http.ListenAndServe(frontendAddr, http.FileServer(http.Dir(FrontEndFolder))))
     }()
   }
-  log.Fatal(http.ListenAndServe(addr, nil))
   log.Printf("backend server listening on %s", addr)
+  log.Fatal(http.ListenAndServe(addr, nil))
 }
 
 func main() {
-  backendAddr := flag.String("baddr", ":8080", "backend ip:port")
-  frontendAddr := flag.String("faddr", ":8081", "ip:port of frontend file server.")
+  backendAddr := flag.String("baddr", "127.0.0.1:8080", "backend ip:port")
+  frontendAddr := flag.String("faddr", "127.0.0.1:8081", "ip:port of frontend file server.")
   serveFrontend := flag.Bool("serve-frontend", false, "if true will serve the frontend files contains in qart-web folder")
   flag.Parse()
   startServer(*backendAddr, *serveFrontend, *frontendAddr)
