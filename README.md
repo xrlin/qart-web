@@ -1,6 +1,6 @@
 # QartWeb
 
-This project is the web ui for [qart](https://github.com/qart)
+This project is the web ui of [qart](https://github.com/qart)
 
 ## Online application
 
@@ -26,5 +26,5 @@ Change to dist folder and run
 ./server -serve-static true
 ```
 
-Now visit localhost:8081. Enjoy it. :clap:
+Now visit http://localhost:8081. Enjoy it. :clap:
 
