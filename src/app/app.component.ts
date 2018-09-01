@@ -22,7 +22,7 @@ export class AppComponent implements AfterViewInit, OnInit {
   @ViewChild('imgInput') imgInput: ElementRef;
   @ViewChild('imgElem') imgElem: ElementRef<HTMLImageElement>;
 
-  previewImg = '/assets/placeholder.png';
+  previewImg = 'assets/placeholder.png';
   qartForm = new QartForm('', 0, 0, 0, null, false);
 
   constructor(private sanitizer: DomSanitizer, private qartService: QartService) {
