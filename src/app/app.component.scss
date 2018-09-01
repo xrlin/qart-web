@@ -1,0 +1,53 @@
+.input-group {
+  text-align: center;
+  input[type=text] {
+    min-width: 40em;
+    height: 30px;
+    font-size: large;
+  }
+}
+
+.img-gallery {
+  text-align: center;
+}
+
+.img-input-group {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 350px;
+  height: 200px;
+  .img-input {
+    position: absolute;
+    font-size: xx-large;
+    color: rgba(0, 0, 0, 0.3);
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+}
+
+.loading {
+  text-align: center;
+  height: 1.5em;
+  color: #999;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}

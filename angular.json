@@ -27,9 +27,14 @@
               "src/assets"
             ],
             "styles": [
+              "src/vendor/jquery.imgareaselect-0.9.10/css/imgareaselect-animated.css",
+              "node_modules/font-awesome/css/font-awesome.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/vendor/jquery.imgareaselect-0.9.10/scripts/jquery.imgareaselect.pack.js"
+            ]
           },
           "configurations": {
             "production": {

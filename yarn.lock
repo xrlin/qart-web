@@ -217,6 +217,10 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/jquery@^3.3.6":
+  version "3.3.6"
+  resolved "http://registry.npm.taobao.org/@types/jquery/download/@types/jquery-3.3.6.tgz#5932ead926307ca21e5b36808257f7c926b06565"
+
 "@types/node@^6.0.46":
   version "6.0.116"
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-6.0.116.tgz#2f9cd62b4ecc4927e3942e2655c182eecf5b45f1"
@@ -2310,6 +2314,10 @@ follow-redirects@^1.0.0:
   dependencies:
     debug "^3.1.0"
 
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "http://registry.npm.taobao.org/font-awesome/download/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "http://registry.npm.taobao.org/for-in/download/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -2558,6 +2566,10 @@ globule@^1.0.0:
 graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "http://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
+
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "http://registry.npm.taobao.org/hammerjs/download/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
 
 handle-thing@^1.2.5:
   version "1.2.5"
@@ -3280,6 +3292,10 @@ jasminewd2@^2.1.0:
   version "2.2.0"
   resolved "http://registry.npm.taobao.org/jasminewd2/download/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
 
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
 js-base64@^2.1.8:
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/js-base64/download/js-base64-2.4.8.tgz#57a9b130888f956834aa40c5b165ba59c758f033"
@@ -3921,6 +3937,10 @@ neo-async@^2.5.0:
 next-tick@1:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/next-tick/download/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
+
+ngx-gallery@^5.6.1:
+  version "5.6.1"
+  resolved "http://registry.npm.taobao.org/ngx-gallery/download/ngx-gallery-5.6.1.tgz#b58c04ee08069f9f9228e544fb77cf3a774e3e44"
 
 no-case@^2.2.0:
   version "2.3.2"
