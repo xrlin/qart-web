@@ -1,6 +1,6 @@
 # QartWeb
 
-This project is the web ui of [qart](https://github.com/qart)
+This project is the web ui of [qart](https://github.com/xrlin/qart)
 
 ## Online application
 
