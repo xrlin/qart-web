@@ -13,7 +13,7 @@ You can download the latest release from this project's release page. Unzip the 
 For example
 
 ```
-# suggest run in linux x86 system. Windows, osx's executable file also contains in the zip file.
+# Suppose running in linux x86 system. Windows, osx's executable file also contains in the zip file.
 server_amd64_linux -serve-static true
 ```
 
