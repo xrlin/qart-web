@@ -2,12 +2,10 @@ package main
 
 import (
   "net/http"
-  "github.com/gin-gonic/gin/json"
   "image"
   _ "image/png"
   _ "image/jpeg"
   _ "image/gif"
-  "github.com/pkg/errors"
   "strconv"
   "os"
   qrcode "github.com/xrlin/qart"
@@ -17,6 +15,8 @@ import (
   "mime/multipart"
   "flag"
   "log"
+  "encoding/json"
+  "errors"
 )
 
 const CachePath = "qart-cache"
